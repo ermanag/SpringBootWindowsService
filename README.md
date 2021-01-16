@@ -6,17 +6,7 @@ Windows Service Wrapper
 İlk adımımız githubdan :NET versiyonumuza uygun olan windows service wrapper edinmektir.
 https://github.com/winsw/winsw/releases/tag/v2.10.3 linki üzerinden ilgili exe yi edinebilirsiniz.
 
-Oluşturacağımız servis için bir xml dosyası oluşturuyoruz. Örnek bir xml oluşturalım:
-
-<service>
-<id>windowsserviceid</id>
-<name>windowsservicename</name>
-<workingdirectory>%BASEPATH%/</workingdirectory>
-<logpath>%BASEPATH%/logs</logpath>
-
-<executable>java</executable>
-<arguments>-jar demo-0.0.1-SNAPSHOT.jar --server.port=8080</arguments>
-</service>
+Oluşturacağımız servis için bir xml dosyası oluşturuyoruz. springboottest.xml dosyasına benzer bir xml dosyası oluşturuyoruz.
 
 Xml dosyasının ilk kısmındaki id ve name kısımlarında windows servisin id si ve ismini belirliyoruz.
 
